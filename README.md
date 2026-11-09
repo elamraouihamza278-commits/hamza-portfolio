@@ -1,27 +1,12 @@
-# Portfolio — Hamza El Amraoui
+# Portfolio Personnel - Hamza El Amraoui
 
-Version française du portfolio personnel.
+Ce dépôt contient le code source de mon portfolio personnel axé sur l'**Électronique, la Conception PCB et les Systèmes Embarqués**.
 
-## Démarrage
-Ouvrez `index.html` dans un navigateur. Aucun outil de compilation n'est nécessaire.
+- **URL du site :** https://elamraouihamza278-commits.github.io/hamza-portfolio/
+- **Technologies :** HTML5, CSS3, JavaScript.
 
-## Personnalisation avant publication
-1. Remplacez le bloc « Votre photo » dans `index.html` par votre vraie photo.
-2. Ajoutez vos propres captures/photos de projets dans le dossier `images/`, puis remplacez les blocs `image-placeholder` par des balises `<img>`.
-3. Remplacez `VOTRE_EMAIL@example.com` par votre adresse e-mail.
-4. Remplacez les liens LinkedIn et GitHub par vos profils exacts.
-5. Vérifiez chaque description de projet avant publication afin qu'elle corresponde exactement à ce qui a été réalisé.
-
-## Structure
-- `index.html` : contenu du site
-- `style.css` : mise en page, couleurs et animations
-- `script.js` : menu mobile et animations au défilement
-- `images/` : photos et captures réelles à ajouter
-
-Les emplacements visuels sont volontairement des placeholders : aucune image fictive n'est présentée comme une réalisation réelle.
-
-## Images déjà intégrées
-- `images/hamza-portrait.jpg` : portrait personnel dans la section d’accueil.
-- `images/piezo-schematic.jpg` : schéma réel du projet d’acquisition piézoélectrique.
-
-Les autres vues du projet (PCB, rendu 3D, résultats LTspice et interface MATLAB) pourront être ajoutées ensuite dans une galerie, à partir des fichiers image correspondants.
+## Structure des Fichiers
+- `index.html` : Structure principale du site.
+- `style.css` : Thème clair (blanc & bleu) et mises en page responsive.
+- `script.js` : Animations, carrousel Tinkercad et compteur de visites.
+- `images/` : Dossier contenant les captures de projets et la photo personnelle.
