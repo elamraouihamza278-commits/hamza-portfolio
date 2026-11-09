@@ -1,0 +1,9 @@
+Ajoutez ici vos vraies photos et captures d'écran :
+- photo personnelle ;
+- robot ESP32 ;
+- carte PCB et/ou simulation du projet piézo ;
+- capture du PCB multicouche ;
+- capture LTspice de la PLL.
+
+Ensuite, remplacez les blocs image-placeholder dans index.html par vos images.
+Ne présentez pas des images génériques comme des photos de vos propres réalisations.

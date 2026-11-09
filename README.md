@@ -19,3 +19,9 @@ Ouvrez `index.html` dans un navigateur. Aucun outil de compilation n'est nécess
 - `images/` : photos et captures réelles à ajouter
 
 Les emplacements visuels sont volontairement des placeholders : aucune image fictive n'est présentée comme une réalisation réelle.
+
+## Images déjà intégrées
+- `images/hamza-portrait.jpg` : portrait personnel dans la section d’accueil.
+- `images/piezo-schematic.jpg` : schéma réel du projet d’acquisition piézoélectrique.
+
+Les autres vues du projet (PCB, rendu 3D, résultats LTspice et interface MATLAB) pourront être ajoutées ensuite dans une galerie, à partir des fichiers image correspondants.
