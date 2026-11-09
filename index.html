@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Hamza El Amraoui — électronique, conception PCB et systèmes embarqués.">
+  <title>Hamza El Amraoui | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#accueil">HE<span>.</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#accueil" class="active">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Étudiant en Master · Électronique</p>
+        <h1>Bonjour, je suis<br><span>Hamza El Amraoui.</span></h1>
+        <h2>Électronique · Conception PCB · Systèmes embarqués</h2>
+        <p class="intro">Étudiant en Master Électronique, Systèmes et Énergies Renouvelables. Je m’intéresse à la conception électronique, au développement de cartes PCB et aux systèmes embarqués, à travers des projets académiques et pratiques.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projets">Voir mes projets <span>↗</span></a>
+          <a class="btn secondary" href="#contact">Me contacter</a>
+        </div>
+        <div class="social-line">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <span>·</span>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-frame">
+          <div class="portrait-placeholder">
+            <span class="placeholder-icon">HE</span>
+            <p>Votre photo</p>
+            <small>À remplacer par une photo personnelle</small>
+          </div>
+        </div>
+        <div class="floating-note note-top"><span class="note-icon">⌁</span> Conception électronique</div>
+        <div class="floating-note note-bottom"><span class="note-icon">▦</span> PCB & systèmes embarqués</div>
+        <div class="decor decor-one"></div><div class="decor decor-two"></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="apropos">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / À PROPOS</p>
+        <h2>Un intérêt pour le <span>hardware</span><br>et les systèmes électroniques.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text reveal">Mon parcours en électronique m’a permis de travailler sur différentes étapes d’un projet : compréhension du besoin, choix des composants, conception de schémas, réalisation de PCB, simulation et analyse des résultats. Je cherche à approfondir ces compétences dans des projets concrets et à continuer d’apprendre.</p>
+        <div class="about-facts reveal">
+          <div><strong>Master</strong><span>Électronique, Systèmes et Énergies Renouvelables</span></div>
+          <div><strong>Licence</strong><span>Sciences Physiques — parcours Électronique</span></div>
+          <div><strong>Intérêts</strong><span>PCB · Embarqué · RF · Instrumentation</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projets">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / PROJETS</p>
+        <h2>Quelques projets <span>réalisés et étudiés.</span></h2>
+        <p class="section-subtitle">Une sélection de travaux académiques et pratiques. Les visuels réels des projets pourront être ajoutés dans les emplacements prévus.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-image image-placeholder"><span>01</span><p>Photo réelle du robot</p></div>
+          <div class="project-content"><p class="project-type">SYSTÈME EMBARQUÉ · IoT</p><h3>Robot mobile connecté avec ESP32</h3><p>Développement d’un robot mobile avec commande des moteurs, capteurs et modes automatique et manuel. Une application Android permet le contrôle et l’échange de données via Firebase.</p><div class="tags"><span>ESP32</span><span>Capteurs</span><span>Firebase</span><span>MIT App Inventor</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image image-placeholder"><span>02</span><p>Photo réelle du PCB / simulation</p></div>
+          <div class="project-content"><p class="project-type">ÉLECTRONIQUE ANALOGIQUE · MESURE</p><h3>Conditionnement d’un signal piézoélectrique</h3><p>Étude d’une chaîne de conditionnement pour signal faible : amplification, adaptation du signal, filtrage et analyse sous MATLAB. Conception d’une carte PCB sous KiCad en vue d’une intégration avec ESP32.</p><div class="tags"><span>KiCad</span><span>LTspice</span><span>MATLAB</span><span>ESP32</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image image-placeholder"><span>03</span><p>Capture réelle du PCB 6 couches</p></div>
+          <div class="project-content"><p class="project-type">CONCEPTION PCB · ÉTUDE</p><h3>Étude d’une carte électronique multicouche</h3><p>Étude et travail de conception autour d’une carte de référence basée sur le composant XMOS XU316, avec analyse de l’organisation d’une carte à six couches et des contraintes de routage.</p><div class="tags"><span>PCB 6 couches</span><span>KiCad</span><span>Routage</span><span>Hardware</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image image-placeholder"><span>04</span><p>Capture réelle du schéma LTspice</p></div>
+          <div class="project-content"><p class="project-type">SIMULATION · ÉLECTRONIQUE</p><h3>Étude et simulation d’une PLL</h3><p>Étude du fonctionnement d’une boucle à verrouillage de phase et simulation du circuit sous LTspice afin d’observer son comportement.</p><div class="tags"><span>LTspice</span><span>PLL</span><span>Simulation</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="competences">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / COMPÉTENCES</p>
+        <h2>Outils et domaines <span>que je pratique.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-panel reveal"><h3>Conception électronique</h3><p>Schémas électroniques, choix de composants, alimentation et circuits de commande.</p><div class="tags"><span>KiCad</span><span>Altium Designer</span><span>EasyEDA</span><span>LTspice</span></div></div>
+        <div class="skill-panel reveal"><h3>Systèmes embarqués</h3><p>Développement et mise en œuvre de systèmes à microcontrôleurs et capteurs.</p><div class="tags"><span>ESP32</span><span>Arduino</span><span>IoT</span><span>Firebase</span></div></div>
+        <div class="skill-panel reveal"><h3>Analyse et programmation</h3><p>Traitement de données, analyse de signaux et programmation appliquée.</p><div class="tags"><span>MATLAB</span><span>C / C++</span><span>Java</span></div></div>
+        <div class="skill-panel reveal"><h3>RF et outils de simulation</h3><p>Découverte de la conception RF et de la simulation électromagnétique.</p><div class="tags"><span>CST Studio Suite</span><span>Antennes</span><span>RF</span></div></div>
+      </div>
+      <p class="skills-note">Ces compétences correspondent à des outils et domaines pratiqués dans le cadre de mes études et projets. Je continue à les développer.</p>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2>Vous avez un projet ou une opportunité ?</h2>
+        <p>Je serais heureux d’échanger avec vous au sujet d’un stage, d’un projet électronique ou d’une collaboration.</p>
+        <a class="btn primary" href="mailto:VOTRE_EMAIL@example.com">M’envoyer un e-mail ↗</a>
+        <div class="contact-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="logo" href="#accueil">HE<span>.</span></a><p>© <span id="year"></span> Hamza El Amraoui. Réalisé avec soin.</p><a href="#accueil">Retour en haut ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
