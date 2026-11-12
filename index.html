@@ -1,290 +1,170 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Hamza El Amraoui | Ingénierie & Systèmes Embarqués</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Hamza El Amraoui — électronique, conception PCB et systèmes embarqués.">
+  <title>Hamza El Amraoui | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header / Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Hamza<span>.Dev</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#accueil">HE<span>.</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#accueil" class="active">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#certificats">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Bonjour, je suis <span class="highlight">Hamza El Amraoui</span></h1>
-                <h2>Étudiant en Ingénierie - Électronique & Systèmes Embarqués</h2>
-                <p>Passionné par la conception matérielle (PCB), la simulation analogique/numérique, le traitement du signal et les systèmes IoT embarqués.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="images/hamza-portrait.jpg" alt="Hamza El Amraoui" onerror="this.src='https://via.placeholder.com/300x300?text=Hamza'">
-            </div>
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Étudiant en Master · Électronique</p>
+        <h1>Bonjour, je suis<br><span>Hamza El Amraoui.</span></h1>
+        <h2 class="hero-role">Électronique<br><span>Hardware Design</span></h2>
+        <p class="hero-focus">Centres d’intérêt : <span class="rotator" id="rotator">PCB Design</span></p>
+        <p class="intro">Étudiant en électronique, je me forme au hardware design. Je recherche un stage.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projets">Voir mes projets <span>↗</span></a>
+          <a class="btn secondary" href="#contact">Me contacter</a>
         </div>
+        <div class="social-line">
+          <a href="https://www.linkedin.com/" data-link="linkedin" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <span>·</span>
+          <a href="https://github.com/elamraouihamza278-commits" data-link="github" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-frame">
+          <img class="portrait-photo" src="images/hamza-portrait.jpg" alt="Portrait de Hamza El Amraoui">
+        </div>
+        <div class="decor decor-one"></div><div class="decor decor-two"></div>
+      </div>
     </section>
 
-    <!-- Section À Propos -->
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <h2 class="section-title">À propos de moi</h2>
-            <div class="about-card">
-                <p>Actuellement en formation avancée en <strong>électronique et systèmes embarqués</strong>, je me consacre au développement de solutions hardware et d'architectures d'acquisition de données. Mon parcours est axé sur l'évolution continue : des premiers circuits d'apprentissage sur Tinkercad jusqu'à la conception de cartes PCB multicouches complexes, la simulation LTspice/MATLAB et le développement IoT avec ESP32.</p>
-            </div>
+    <section class="section about-section" id="apropos">
+      <div class="section-heading reveal">
+        <h2>À propos</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text reveal">Je me forme au hardware design en électronique : conception de cartes PCB, FPGA et RF, avec une forte motivation pour l’IC design. J’avance par des projets, du schéma à la simulation puis à la conception finale, et je recherche un stage.</p>
+        <div class="about-facts reveal">
+          <div><strong>Master</strong><em>2025 – 2027</em><span>Électronique, Systèmes et Énergies Renouvelables</span></div>
+          <div><strong>Licence</strong><em>2022 – 2025</em><span>Sciences Physiques — parcours Électronique</span></div>
         </div>
+      </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="skills section-padding alt-bg">
-        <div class="container">
-            <h2 class="section-title">Compétences Techniques</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fa-solid fa-microchip skill-icon"></i>
-                    <h3>Conception électronique</h3>
-                    <ul>
-                        <li>Schémas électroniques</li>
-                        <li>Conception PCB</li>
-                        <li>KiCad 9.0</li>
-                        <li>Altium Designer (en cours)</li>
-                        <li>EasyEDA</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-chart-line skill-icon"></i>
-                    <h3>Simulation & Analyse</h3>
-                    <ul>
-                        <li>LTspice</li>
-                        <li>Proteus</li>
-                        <li>MATLAB (Simulink & Traitement)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-hard-drive skill-icon"></i>
-                    <h3>Systèmes Embarqués</h3>
-                    <ul>
-                        <li>Arduino</li>
-                        <li>ESP32 (IoT)</li>
-                        <li>STM32 (Débutant/En cours)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-code skill-icon"></i>
-                    <h3>Programmation</h3>
-                    <ul>
-                        <li>C / C++</li>
-                        <li>Python</li>
-                        <li>Scripting MATLAB</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-network-wired skill-icon"></i>
-                    <h3>Protocoles de Communication</h3>
-                    <ul>
-                        <li>UART</li>
-                        <li>SPI</li>
-                        <li>I²C</li>
-                        <li>CAN (Notions de base)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-wave-square skill-icon"></i>
-                    <h3>RF & Simulation EM</h3>
-                    <ul>
-                        <li>CST Studio Suite</li>
-                        <li>Initiation aux antennes & systèmes RF</li>
-                    </ul>
-                </div>
+    <section class="section projects-section" id="projets">
+      <div class="section-heading reveal">
+        <h2>Projets</h2>
+      </div>
+
+      <section class="fl-block reveal" id="freelance" aria-label="Missions freelance">
+        <header class="fl-head">
+          <h3>Missions freelance</h3>
+          <span class="date-pill fl-period">07/2026 – 10/2026</span>
+        </header>
+        <article class="project-card tk-card fl-card" id="fl-carousel" aria-roledescription="carrousel" aria-label="Projets freelance">
+          <div class="tk-media car-media">
+            <button class="tk-image-link fl-image-btn" type="button" title="Agrandir l’image"><img class="tk-image fl-image" src="" alt=""></button>
+            <button class="tk-arrow tk-prev car-prev" type="button" aria-label="Projet précédent">‹</button>
+            <button class="tk-arrow tk-next car-next" type="button" aria-label="Projet suivant">›</button>
+            <span class="image-caption tk-hint">Cliquez sur l’image pour l’agrandir</span>
+          </div>
+          <div class="project-content tk-content fl-content" aria-live="polite">
+            <p class="project-type fl-type"></p>
+            <h3 class="fl-title"></h3>
+            <div class="fl-text"></div>
+            <div class="tags fl-tags"></div>
+            <div class="tk-footer">
+              <div class="tk-dots car-dots" role="tablist" aria-label="Choisir un projet freelance"></div>
+              <span class="tk-count car-count"></span>
             </div>
+          </div>
+        </article>
+      </section>
+
+      <div class="project-grid" id="project-grid"></div>
+
+      <article class="project-card tk-card reveal" id="tinkercad" aria-roledescription="carrousel" aria-label="Projets Tinkercad">
+        <div class="tk-media car-media">
+          <a class="tk-image-link" href="#" target="_blank" rel="noreferrer" title="Ouvrir ce projet sur Tinkercad">
+            <img class="tk-image" src="images/tinkercad-powerful-stantia.jpg" alt="Projet Tinkercad">
+          </a>
+          <button class="tk-arrow tk-prev car-prev" type="button" aria-label="Projet précédent">‹</button>
+          <button class="tk-arrow tk-next car-next" type="button" aria-label="Projet suivant">›</button>
+          <span class="image-caption tk-hint">Cliquez sur l’image pour ouvrir Tinkercad ↗</span>
         </div>
+        <div class="project-content tk-content" aria-live="polite">
+          <div class="project-meta"><p class="project-type">PROJETS D’APPRENTISSAGE · TINKERCAD</p><span class="date-pill">2023</span></div>
+          <h3 class="tk-title"></h3>
+          <p class="tk-sub"></p>
+          <p class="tk-text"></p>
+          <div class="tags tk-tags"></div>
+          <div class="tk-footer">
+            <a class="btn secondary small tk-link" href="#" target="_blank" rel="noreferrer">Ouvrir sur Tinkercad <span>↗</span></a>
+            <div class="tk-dots car-dots" role="tablist" aria-label="Choisir un projet Tinkercad"></div>
+            <span class="tk-count car-count"></span>
+          </div>
+        </div>
+      </article>
+
+      <noscript><p class="section-subtitle">Activez JavaScript pour afficher la liste des projets.</p></noscript>
     </section>
 
-    <!-- Section Projets (Chronologique) -->
-    <section id="projects" class="projects section-padding">
-        <div class="container">
-            <h2 class="section-title">Projets & Réalisations</h2>
-
-            <!-- Projet 1: Tinkercad Carousel -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Projet 1 — Projets et Circuits d'Apprentissage Tinkercad</h3>
-                    <span class="project-date">2023</span>
-                </div>
-                <p class="project-intro">Une série de projets d'initiation et de reproduction de circuits électroniques pour la maîtrise des bases de l'algorithmique et du prototype rapide.</p>
-                
-                <!-- Tinkercad Carousel -->
-                <div class="carousel-container">
-                    <div class="carousel-slide fade">
-                        <a href="https://www.tinkercad.com/things/iycOlzD1g6S-powerful-stantia" target="_blank" title="Cliquer pour ouvrir sur Tinkercad">
-                            <img src="images/Capture d'écran 2026-11-09 153100.png" alt="Powerful Stantia" onerror="this.src='https://via.placeholder.com/600x350?text=Powerful+Stantia'">
-                        </a>
-                        <div class="carousel-caption">
-                            <h4>1. Powerful Stantia</h4>
-                            <p>Système embarqué pour robot mobile autonome basé sur Arduino Uno, driver L293D, moteurs DC, capteurs ultrasoniques HC-SR04 et servomoteur.</p>
-                            <small><i class="fa-solid fa-arrow-up-right-from-square"></i> Cliquez sur l'image pour accéder directement au circuit Tinkercad</small>
-                        </div>
-                    </div>
-                    <div class="carousel-slide fade" style="display:none;">
-                        <a href="https://www.tinkercad.com/things/ajVa392noFY-epic-kup" target="_blank" title="Cliquer pour ouvrir sur Tinkercad">
-                            <img src="images/1794238531973_image.png" alt="Epic Kup" onerror="this.src='https://via.placeholder.com/600x350?text=Epic+Kup'">
-                        </a>
-                        <div class="carousel-caption">
-                            <h4>2. Epic Kup — Serrure Automatique</h4>
-                            <p>Système de contrôle d'accès avec clavier matriciel 4x4, écran LCD I2C et servomoteur d'actionnement de verrouillage.</p>
-                            <small><i class="fa-solid fa-arrow-up-right-from-square"></i> Cliquez sur l'image pour accéder directement au circuit Tinkercad</small>
-                        </div>
-                    </div>
-                    
-                    <!-- Buttons -->
-                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
-                </div>
-                <div class="tags">
-                    <span class="tag">Arduino</span>
-                    <span class="tag">Tinkercad</span>
-                    <span class="tag">C/C++</span>
-                    <span class="tag">Capteurs</span>
-                </div>
-            </div>
-
-            <!-- Projet 2: Robot Mobile Autonome -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Projet 2 — Robot Mobile Autonome (Détection & Évitement d'obstacles)</h3>
-                    <span class="project-date">2023 - 2024</span>
-                </div>
-                <p>Robot intelligent conçu pour la navigation autonome avec gestion dynamique de la direction et contrôle de vitesse PWM.</p>
-                <div class="project-details">
-                    <ul>
-                        <li><strong>Propulsion :</strong> 2 Moteurs DC commandés par driver L298N/L293 avec variation PWM.</li>
-                        <li><strong>Détection :</strong> 2 capteurs ultrasoniques HC-SR04 dont un monté sur un servomoteur orientable.</li>
-                        <li><strong>Logique :</strong> Calcul des distances en temps réel, signalisation LED et sortie Moniteur Série.</li>
-                    </ul>
-                </div>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/QQuICNbAxjk" title="Démo Robot Mobile" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="tags">
-                    <span class="tag">Arduino</span>
-                    <span class="tag">HC-SR04</span>
-                    <span class="tag">Servo</span>
-                    <span class="tag">PWM</span>
-                    <span class="tag">L298N</span>
-                </div>
-            </div>
-
-            <!-- Projet 3: Acquisition Signal Piézoélectrique -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Projet 3 — Acquisition et Conditionnement de Signal Piézoélectrique</h3>
-                    <span class="project-date">2024</span>
-                </div>
-                <p>Étude et réalisation d'une chaîne d'acquisition analogique et numérique complète pour capteurs piézoélectriques.</p>
-                <div class="project-grid-images">
-                    <img src="images/Capture d'écran 2026-11-09 145016.png" alt="Schéma KiCad" title="Routage PCB KiCad">
-                    <img src="images/Capture d'écran 2026-11-09 145036.png" alt="PCB 3D KiCad" title="Vue 3D Carte KiCad">
-                    <img src="images/Capture d'écran 2026-11-09 145223.png" alt="Simulation LTspice" title="Simulation analogique LTspice">
-                    <img src="images/image_0f5fdb.png" alt="Interface MATLAB" title="Filtrage numérique sous MATLAB">
-                </div>
-                <div class="project-details">
-                    <ul>
-                        <li><strong>Conditionnement :</strong> Amplification d'instrumentation, filtrage actif passe-bas et décalage d'offset pour l'ADC de l'ESP32.</li>
-                        <li><strong>Traitement :</strong> Simulation sous LTspice et traitement numérique (filtrage) développé sous MATLAB.</li>
-                        <li><strong>Hardware :</strong> Conception et routage du PCB de la carte d'acquisition sous KiCad.</li>
-                    </ul>
-                </div>
-                <div class="tags">
-                    <span class="tag">LTspice</span>
-                    <span class="tag">MATLAB</span>
-                    <span class="tag">KiCad</span>
-                    <span class="tag">ESP32</span>
-                    <span class="tag">Traitement du Signal</span>
-                </div>
-            </div>
-
-            <!-- Projet 4: PLL Simulation -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Projet 4 — Simulation d'une Boucle à Verrouillage de Phase (PLL)</h3>
-                    <span class="project-date">2024</span>
-                </div>
-                <p>Étude théorique et modélisation dynamique d'un système de synchronisation de phase et fréquence (PLL) pour les télécommunications.</p>
-                <div class="project-grid-images two-cols">
-                    <img src="images/image_0fcd14.jpg" alt="Présentation PLL">
-                    <img src="images/image_0fd01a.jpg" alt="Signal VCO LTspice MATLAB">
-                </div>
-                <div class="tags">
-                    <span class="tag">PLL</span>
-                    <span class="tag">MATLAB</span>
-                    <span class="tag">LTspice</span>
-                    <span class="tag">VCO</span>
-                    <span class="tag">Filtrage Passe-Bas</span>
-                </div>
-            </div>
-
-            <!-- Projet 5: KiCad PCB High Voltage -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Projet 5 — Conception PCB Carte Haute Tension / IoT sous KiCad 9.0</h3>
-                    <span class="project-date">2025 - 2026</span>
-                </div>
-                <p>Projet pratique de conception avancée matérielle basé sur la gestion des contraintes d'isolation et la fabrication industrielle.</p>
-                <div class="project-details">
-                    <ul>
-                        <li>Création et gestion des bibliothèques de composants personnalisées (empreintes & symboles).</li>
-                        <li>Routage optimisé avec contraintes de sécurité Haute Tension & lignes d'isolation.</li>
-                        <li>Intégration des bus de communication <strong>SPI</strong> et <strong>I²C</strong>.</li>
-                        <li>Génération des fichiers <strong>Gerber</strong> pour fabrication industrielle.</li>
-                    </ul>
-                </div>
-                <div class="tags">
-                    <span class="tag">KiCad 9.0</span>
-                    <span class="tag">PCB High Voltage</span>
-                    <span class="tag">Gerber Files</span>
-                    <span class="tag">SPI / I2C</span>
-                </div>
-            </div>
-        </div>
+    <section class="section skills-section" id="competences">
+      <div class="section-heading reveal">
+        <h2>Compétences</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-panel reveal"><h3>Électronique</h3><p>Fondamentaux de l’électronique.</p><div class="tags"><span>Électronique analogique</span><span>Électronique numérique</span></div></div>
+        <div class="skill-panel reveal"><h3>Conception PCB</h3><p>Réalisation de schémas électroniques et de cartes PCB.</p><div class="tags"><span>Schémas électroniques</span><span>Conception PCB</span><span>KiCad</span><span>Altium Designer</span><span>EasyEDA</span></div></div>
+        <div class="skill-panel reveal"><h3>Simulation et analyse</h3><p>Simulation de circuits et analyse de signaux.</p><div class="tags"><span>LTspice</span><span>Proteus</span><span>MATLAB</span></div></div>
+        <div class="skill-panel reveal"><h3>Systèmes embarqués</h3><p>Mise en œuvre de cartes à microcontrôleur.</p><div class="tags"><span>Arduino</span><span>ESP32</span><span>STM32</span></div></div>
+        <div class="skill-panel reveal"><h3>Conception numérique et FPGA</h3><p>Description de circuits numériques.</p><div class="tags"><span>FPGA</span><span>Verilog HDL</span></div></div>
+        <div class="skill-panel reveal"><h3>Programmation</h3><p>Programmation appliquée à l’électronique et à l’analyse de données.</p><div class="tags"><span>C / C++</span><span>Python</span><span>MATLAB</span></div></div>
+        <div class="skill-panel reveal"><h3>Protocoles de communication</h3><p>Échanges entre circuits, modules et microcontrôleurs.</p><div class="tags"><span>UART</span><span>SPI</span><span>I²C</span><span>CAN</span></div></div>
+        <div class="skill-panel reveal"><h3>RF et simulation électromagnétique</h3><p>Initiation à la simulation d’antennes et aux systèmes RF.</p><div class="tags"><span>CST Studio Suite</span><span>Initiation aux antennes</span><span>Initiation aux systèmes RF</span></div></div>
+      </div>
+      <p class="skills-note">Ces compétences correspondent à des outils et domaines pratiqués dans le cadre de mes études et projets. Certaines sont encore en cours d’apprentissage et je continue à les développer.</p>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="contact section-padding alt-bg">
-        <div class="container text-center">
-            <h2 class="section-title">Contact</h2>
-            <p>N'hésitez pas à me contacter pour toute collaboration, opportunité ou échange technique !</p>
-            <div class="contact-links">
-                <a href="https://github.com/elamraouihamza278-commits" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Mon Profil GitHub</a>
-            </div>
-        </div>
+    <section class="section certs-section" id="certificats">
+      <div class="section-heading reveal">
+        <h2>Certifications</h2>
+      </div>
+      <div class="cert-grid" id="cert-grid"></div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>&copy; 2026 Hamza El Amraoui - Tous droits réservés.</p>
-            <div class="visitor-counter">
-                <span><i class="fa-solid fa-eye"></i> Visites : <strong id="visitCount">...</strong></span>
-            </div>
+    <section class="contact-section section" id="contact">
+      <div class="contact-card reveal">
+        <h2>Contact</h2>
+        <p>Je serais heureux d’échanger au sujet d’un stage, d’un projet électronique ou d’une collaboration.</p>
+        <a class="btn primary" href="mailto:VOTRE_EMAIL@example.com" data-link="email">M’envoyer un e-mail ↗</a>
+        <div class="contact-links"><a href="tel:+212629301624" data-link="tel">Tél. : 0629301624</a><a href="https://wa.me/212629301624" data-link="whatsapp" target="_blank" rel="noreferrer">WhatsApp ↗</a><a href="https://www.linkedin.com/" data-link="linkedin" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/elamraouihamza278-commits" data-link="github" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        <div class="stats-strip" id="stats-strip" hidden>
+          <div><strong id="stat-visitors">—</strong><span>Visiteurs</span></div>
+          <div><strong id="stat-visits">—</strong><span>Visites</span></div>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
+      </div>
+    </section>
+  </main>
+  <footer><a class="logo" href="#accueil">HE<span>.</span></a><p>© <span id="year"></span> Hamza El Amraoui. Réalisé avec soin.</p><a href="#accueil">Retour en haut ↑</a></footer>
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dlg-title">
+    <button class="dlg-close" type="button" aria-label="Fermer">✕</button>
+    <div class="dlg-body" id="dlg-body"></div>
+  </dialog>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

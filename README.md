@@ -1,12 +1,16 @@
-# Portfolio Personnel - Hamza El Amraoui
+# Portfolio — Hamza El Amraoui
 
-Ce dépôt contient le code source de mon portfolio personnel axé sur l'**Électronique, la Conception PCB et les Systèmes Embarqués**.
+Site statique (HTML, CSS, JavaScript) publié avec GitHub Pages.
 
-- **URL du site :** https://elamraouihamza278-commits.github.io/hamza-portfolio/
-- **Technologies :** HTML5, CSS3, JavaScript.
+## Structure
+- `index.html` : structure de la page
+- `style.css` : design, couleurs, animations
+- `script.js` : menu, carrousel Tinkercad, fenêtres de détail, certificats, statistiques
+- `data.js` : **tout le contenu à modifier** (coordonnées, projets, certificats, statistiques)
+- `images/` : captures et photos réelles
+- `certificats/` : images et PDF des certifications
 
-## Structure des Fichiers
-- `index.html` : Structure principale du site.
-- `style.css` : Thème clair (blanc & bleu) et mises en page responsive.
-- `script.js` : Animations, carrousel Tinkercad et compteur de visites.
-- `images/` : Dossier contenant les captures de projets et la photo personnelle.
+## Modifier le contenu
+- Coordonnées : bloc `CONTACT` dans `data.js`.
+- Nouvelle certification : copiez un bloc de `CERTIFICATS` dans `data.js` (champs : nom, organisme, date, image, fichier, competences) et déposez l'image/PDF dans `certificats/`.
+- Nouveau projet : ajoutez un bloc dans `PROJETS` (du plus ancien au plus récent).
