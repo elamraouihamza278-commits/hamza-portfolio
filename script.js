@@ -1,3 +1,28 @@
+/* Filet de sécurité : si une image du dossier images/ ou certificats/ est introuvable
+   (par exemple fichiers déposés à la racine du dépôt), on réessaie à la racine. */
+document.addEventListener('error', e => {
+  const img = e.target;
+  if (!img || img.tagName !== 'IMG') return;
+  const src = img.getAttribute('src') || '';
+  if (/^(images|certificats)\//.test(src)) {
+    img.src = src.replace(/^(images|certificats)\//, '');
+  } else if (img.closest('.project-photo')) {
+    img.remove();
+  }
+}, true);
+
+/* Images déjà en erreur avant le chargement de ce script (ex. portrait) */
+function fixBrokenImages() {
+  document.querySelectorAll('img').forEach(img => {
+    const src = img.getAttribute('src') || '';
+    if (img.complete && img.naturalWidth === 0 && /^(images|certificats)\//.test(src)) {
+      img.src = src.replace(/^(images|certificats)\//, '');
+    }
+  });
+}
+fixBrokenImages();
+addEventListener('load', fixBrokenImages);
+
 /* Menu mobile */
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
@@ -187,7 +212,7 @@ function renderCards(list, container) {
     card.style.transitionDelay = (container.children.length % 2) * 120 + 'ms';
     let media;
     if (p.image) {
-      media = `<div class="project-image project-photo ${p.fit === 'cover' ? 'cover' : ''}"><img src="${esc(p.image)}" alt="${esc(p.alt || p.titre)}" loading="lazy" onerror="this.remove()">${p.badge ? `<span class="video-badge">${esc(p.badge)}</span>` : ''}${p.galerie && p.galerie.length > 1 ? `<span class="image-caption count-badge">${p.galerie.length} images</span>` : ''}</div>`;
+      media = `<div class="project-image project-photo ${p.fit === 'cover' ? 'cover' : ''}"><img src="${esc(p.image)}" alt="${esc(p.alt || p.titre)}" loading="lazy">${p.badge ? `<span class="video-badge">${esc(p.badge)}</span>` : ''}${p.galerie && p.galerie.length > 1 ? `<span class="image-caption count-badge">${p.galerie.length} images</span>` : ''}</div>`;
     } else {
       media = `<div class="project-image image-placeholder"><p>${esc(p.apercu || 'Visuel à venir')}</p></div>`;
     }
